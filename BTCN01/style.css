@@ -47,6 +47,7 @@ img.ex1{
 	margin-top: 10%;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 30px;
 }
 
 img.ex2{
@@ -59,7 +60,7 @@ img.ex3{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 40px;
+	margin-bottom: 30%;
 }
 
 img.ex4{
@@ -146,7 +147,7 @@ p.ex7.color1{
 	display: inline-block;
 	font-size: 18px;
 	margin: 10px 0px;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 	cursor: pointer;
 	border-radius: 40px;
 	border: 5px solid #f2f2f2;
@@ -201,7 +202,7 @@ ul li{
   margin-bottom: 50px;
   display: inline-block;
   position: relative;
-  width: 1000px;
+  width: 900px;
   height: auto;
   border: 1px solid lightgrey;
 }
