@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+    <title>Simple Calculator</title>
+  </head>
+  <body>
+	
+	<div class="container">
+	<form name="myform">
+		<div class="row">
+			<div class="col-md-6">
+				<h1><b>Bé tập tính</b></h1>
+			</div>		
+		</div>
+		
+		<div class="row">
+			<div class="col-md-8 col-sm-12">
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<h4 class="ex1">Số thứ nhất</h4>
+					</div>
+					<div class="col-md-5 col-sm-7">
+						<input type="text" name="number1" id="num1" onblur="onBlurBox1()">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<h4 class="ex1">Số thứ hai</h4>
+					</div>	
+					<div class="col-md-5 col-sm-7">
+						<input type="text" name="number2" id="num2" onblur="onBlurBox2()">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<h4 class="ex1">Kết quả</h4>
+					</div>
+					<div class="col-md-5 col-sm-7">
+						<input type="text" name="result" id="result">
+					</div>
+				</div>
+			</div>	
+			<div class="col-md-4 col-sm-12">
+				<div class="row">
+					<div class="col-md-6">
+						<input type="radio" name="operator" id="plus" value="plus" onclick="onClickOperator(this.value)">
+						<label for="plus">Cộng<label>
+					</div>	
+					<div class="col-md-6">
+						<input type="radio" name="operator" id="minus" value="minus" onclick="onClickOperator(this.value)">
+						<label for="plus">Trừ<label>
+					</div>				
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<input type="radio" name="operator" id="multiply" value="multiply" onclick="onClickOperator(this.value)">
+						<label for="plus">Nhân<label>
+					</div>	
+					<div class="col-md-6">
+						<input type="radio" name="operator" id="divide" value="divide" onclick="onClickOperator(this.value)">
+						<label for="plus">Chia<label>
+					</div>					
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<input type="button" value="Tính" id="cal" onclick="onClickCal()">
+					</div>	
+					<div class="col-md-6">
+						<input type="button" value="Xóa" id="clear" onclick="clearCal()">
+					</div>					
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-sm-12">
+				<div class="row">
+					<div class="col-md-4 col-ms-5">
+						<h4 class="ex2">Thông báo</h4>
+					</div>	
+					<div class="col-md-8">
+						<p class="ex1" id="info"></p>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</form>
+	</div>
+	
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
