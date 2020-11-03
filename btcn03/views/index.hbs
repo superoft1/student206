@@ -1,0 +1,78 @@
+<div class="container">
+  <form method="post">
+
+    <div class="row">
+			<div class="col-md-6">
+				<h1><b>Bé tập tính</b></h1>
+			</div>		
+		</div>
+
+    <div class="row">
+			<div class="col-md-8 col-sm-12">
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<h4 class="ex1">Số thứ nhất</h4>
+					</div>
+					<div class="col-md-5 col-sm-7">
+						<input name="number1" value="{{n1}}">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<h4 class="ex1">Số thứ hai</h4>
+					</div>	
+					<div class="col-md-5 col-sm-7">
+						<input name="number2" value="{{n2}}">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<h4 class="ex1">Kết quả</h4>
+					</div>
+					<div class="col-md-5 col-sm-7">
+						<input value="{{result}}">
+					</div>
+				</div>
+			</div>	
+			<div class="col-md-4 col-sm-12">
+				<div class="row">
+					<div class="col-md-6">
+						<input type="radio" name="operator" id="plus" value="1">
+						<label for="plus">Cộng<label>
+					</div>	
+					<div class="col-md-6">
+						<input type="radio" name="operator" id="minus" value="2">
+						<label for="plus">Trừ<label>
+					</div>				
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<input type="radio" name="operator" id="multiply" value="3">
+						<label for="plus">Nhân<label>
+					</div>	
+					<div class="col-md-6">
+						<input type="radio" name="operator" id="divide" value="4">
+						<label for="plus">Chia<label>
+					</div>					
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<input type="Submit" value=" Tính " id="cal">
+					</div>										
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-sm-12">
+				<div class="row">
+					<div class="col-md-4 col-ms-5">
+						<h4 class="ex2">Thông báo</h4>
+					</div>	
+					<div class="col-md-8">
+						<p class = "ex1" >{{notification}}</p>
+					</div>
+				</div>				
+			</div>
+		</div>
+  </form>
+</div>
